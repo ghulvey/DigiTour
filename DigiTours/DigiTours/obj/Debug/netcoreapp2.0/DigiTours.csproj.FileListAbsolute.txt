@@ -10,3 +10,15 @@ H:\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.AssemblyInfoInputs.cach
 H:\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.AssemblyInfo.cs
 H:\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.dll
 H:\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.pdb
+H:\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.deps.json
+H:\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.runtimeconfig.json
+H:\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.runtimeconfig.dev.json
+H:\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.dll
+H:\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.pdb
+H:\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.csprojAssemblyReference.cache
+H:\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.csproj.CoreCompileInputs.cache
+H:\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+H:\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.AssemblyInfoInputs.cache
+H:\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.AssemblyInfo.cs
+H:\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.dll
+H:\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.pdb

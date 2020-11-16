@@ -13265,11 +13265,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\DigiTours\\DigiTours\\DigiTours.csproj",
+      "projectUniqueName": "H:\\GitHub\\DigiTour\\DigiTours\\DigiTours\\DigiTours.csproj",
       "projectName": "DigiTours",
-      "projectPath": "H:\\DigiTours\\DigiTours\\DigiTours.csproj",
+      "projectPath": "H:\\GitHub\\DigiTour\\DigiTours\\DigiTours\\DigiTours.csproj",
       "packagesPath": "C:\\Users\\mc_ghulvey21\\.nuget\\packages\\",
-      "outputPath": "H:\\DigiTours\\DigiTours\\obj\\",
+      "outputPath": "H:\\GitHub\\DigiTour\\DigiTours\\DigiTours\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
