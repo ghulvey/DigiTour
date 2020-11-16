@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30413.136
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiTours", "DigiTours\DigiTours.csproj", "{894CD951-4EF8-4902-9CC2-017AA58CCEFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiTours", "DigiTours\DigiTours.csproj", "{19FA55B0-7CFB-49C0-B454-F2DCC46F9772}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{894CD951-4EF8-4902-9CC2-017AA58CCEFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{894CD951-4EF8-4902-9CC2-017AA58CCEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{894CD951-4EF8-4902-9CC2-017AA58CCEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{894CD951-4EF8-4902-9CC2-017AA58CCEFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19FA55B0-7CFB-49C0-B454-F2DCC46F9772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19FA55B0-7CFB-49C0-B454-F2DCC46F9772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19FA55B0-7CFB-49C0-B454-F2DCC46F9772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19FA55B0-7CFB-49C0-B454-F2DCC46F9772}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {67C5CCB9-5403-419F-8572-5408FFD89E6F}
+		SolutionGuid = {EDAC8A73-91AA-4ED3-92D2-F6195319DC5A}
 	EndGlobalSection
 EndGlobal

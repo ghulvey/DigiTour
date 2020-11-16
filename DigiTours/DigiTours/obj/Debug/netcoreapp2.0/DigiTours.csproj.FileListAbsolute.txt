@@ -1,0 +1,12 @@
+H:\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.deps.json
+H:\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.runtimeconfig.json
+H:\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.runtimeconfig.dev.json
+H:\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.dll
+H:\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.pdb
+H:\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.csprojAssemblyReference.cache
+H:\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.csproj.CoreCompileInputs.cache
+H:\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+H:\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.AssemblyInfoInputs.cache
+H:\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.AssemblyInfo.cs
+H:\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.dll
+H:\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.pdb
