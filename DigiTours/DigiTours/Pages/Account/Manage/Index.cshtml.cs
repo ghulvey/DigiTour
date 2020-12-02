@@ -47,6 +47,14 @@ namespace DigiTours.Pages.Account.Manage
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
+
+            [Required]
+            [Display(Name = "First name")]
+            public string FirstName { get; set; }
+
+            [Required]
+            [Display(Name = "Last name")]
+            public string LastName { get; set; }
         }
 
         public async Task<IActionResult> OnGetAsync()
@@ -62,7 +70,9 @@ namespace DigiTours.Pages.Account.Manage
             Input = new InputModel
             {
                 Email = user.Email,
-                PhoneNumber = user.PhoneNumber
+                PhoneNumber = user.PhoneNumber,
+                FirstName = user.FirstName,
+                LastName = user.LastName
             };
 
             IsEmailConfirmed = await _userManager.IsEmailConfirmedAsync(user);
@@ -92,6 +102,8 @@ namespace DigiTours.Pages.Account.Manage
                 }
             }
 
+
+
             if (Input.PhoneNumber != user.PhoneNumber)
             {
                 var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
@@ -100,6 +112,17 @@ namespace DigiTours.Pages.Account.Manage
                     throw new ApplicationException($"Unexpected error occurred setting phone number for user with ID '{user.Id}'.");
                 }
             }
+
+
+            if(Input.FirstName != user.FirstName)
+            {
+                user.FirstName = Input.FirstName;
+            }
+            if(Input.LastName != user.LastName)
+            {
+                user.LastName = Input.LastName;
+            }
+            await _userManager.UpdateAsync(user);
 
             StatusMessage = "Your profile has been updated";
             return RedirectToPage();

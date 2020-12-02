@@ -1,0 +1,46 @@
+﻿@page
+@model DigiTours.Pages.Dashboard.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Tour</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tour.User)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tour.User)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tour.Location)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tour.Location)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tour.Requests)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tour.Requests)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tour.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tour.Type)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Tour.ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

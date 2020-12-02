@@ -1,0 +1,50 @@
+﻿@page
+@model DigiTours.Pages.Dashboard.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Tour</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Tour.ID" />
+            <div class="form-group">
+                <label asp-for="Tour.User" class="control-label"></label>
+                <input asp-for="Tour.User" class="form-control" />
+                <span asp-validation-for="Tour.User" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tour.Location" class="control-label"></label>
+                <input asp-for="Tour.Location" class="form-control" />
+                <span asp-validation-for="Tour.Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tour.Requests" class="control-label"></label>
+                <input asp-for="Tour.Requests" class="form-control" />
+                <span asp-validation-for="Tour.Requests" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tour.Type" class="control-label"></label>
+                <input asp-for="Tour.Type" class="form-control" />
+                <span asp-validation-for="Tour.Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
