@@ -12,9 +12,10 @@ using System;
 namespace DigiTours.Migrations
 {
     [DbContext(typeof(TourContext))]
-    partial class TourContextModelSnapshot : ModelSnapshot
+    [Migration("20201203183457_TourAddress")]
+    partial class TourAddress
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

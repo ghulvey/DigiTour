@@ -12,9 +12,10 @@ using System;
 namespace DigiTours.Migrations
 {
     [DbContext(typeof(TourContext))]
-    partial class TourContextModelSnapshot : ModelSnapshot
+    [Migration("20201203180556_Tour2")]
+    partial class Tour2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,21 +27,13 @@ namespace DigiTours.Migrations
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("City");
-
                     b.Property<string>("Location");
 
                     b.Property<string>("Requests");
 
-                    b.Property<int?>("State");
-
-                    b.Property<string>("StreetAddress");
-
                     b.Property<int?>("Type");
 
                     b.Property<string>("User");
-
-                    b.Property<int>("ZipCode");
 
                     b.HasKey("ID");
 
