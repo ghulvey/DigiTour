@@ -1,8 +1,14 @@
 ﻿@page
 @model DigiTours.Pages.Dashboard.DetailsModel
-
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
 @{
     ViewData["Title"] = "Details";
+
+
+    var user = await UserManager.FindByIdAsync(Model.Tour.User);
+
 }
 
 <h2>Details</h2>
@@ -10,12 +16,35 @@
 <div>
     <h4>Tour</h4>
     <hr />
+
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Tour.User)
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Tour.User)
+        </dd>
+        <dt>
+            Name
+        </dt>
+        <dd>
+            @user.FirstName @user.LastName
+        </dd>
+        <dt>
+            Email
+        </dt>
+        <dd>
+            @user.Email
+        </dd>
+        <hr />
+
+        <dt>
+            Address
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tour.StreetAddress)
+            @Html.DisplayFor(model => model.Tour.StreetAddress2) 
+            @Html.DisplayFor(model => model.Tour.City), @Html.DisplayFor(model => model.Tour.State). @Html.DisplayFor(model => model.Tour.ZipCode)
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Tour.Location)

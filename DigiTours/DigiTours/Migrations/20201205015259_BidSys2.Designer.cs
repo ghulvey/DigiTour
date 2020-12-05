@@ -12,14 +12,37 @@ using System;
 namespace DigiTours.Migrations
 {
     [DbContext(typeof(TourContext))]
-    partial class TourContextModelSnapshot : ModelSnapshot
+    [Migration("20201205015259_BidSys2")]
+    partial class BidSys2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.0.3-rtm-10026")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("DigiTours.Models.Bid", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<double>("Commission");
+
+                    b.Property<double>("Cost");
+
+                    b.Property<DateTime>("Delivery");
+
+                    b.Property<DateTime>("Expiration");
+
+                    b.Property<string>("Notes");
+
+                    b.Property<string>("User");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Bid");
+                });
 
             modelBuilder.Entity("DigiTours.Models.Tour", b =>
                 {
@@ -47,28 +70,6 @@ namespace DigiTours.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Tour");
-                });
-
-            modelBuilder.Entity("DigiTours.Models.TourBid", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<double>("Commission");
-
-                    b.Property<double>("Cost");
-
-                    b.Property<DateTime>("Delivery");
-
-                    b.Property<DateTime>("Expiration");
-
-                    b.Property<string>("Notes");
-
-                    b.Property<string>("User");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("TourBid");
                 });
 #pragma warning restore 612, 618
         }

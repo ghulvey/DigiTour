@@ -12,6 +12,8 @@ namespace DigiTours.Pages.Account.Manage
 
         public static string ChangePassword => "ChangePassword";
 
+        public static string TourGuideSignup => "Tour Guide";
+
         public static string ExternalLogins => "ExternalLogins";
 
         public static string TwoFactorAuthentication => "TwoFactorAuthentication";

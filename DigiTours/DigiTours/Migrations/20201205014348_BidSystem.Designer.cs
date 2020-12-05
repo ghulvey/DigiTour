@@ -12,9 +12,10 @@ using System;
 namespace DigiTours.Migrations
 {
     [DbContext(typeof(TourContext))]
-    partial class TourContextModelSnapshot : ModelSnapshot
+    [Migration("20201205014348_BidSystem")]
+    partial class BidSystem
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,28 +48,6 @@ namespace DigiTours.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Tour");
-                });
-
-            modelBuilder.Entity("DigiTours.Models.TourBid", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<double>("Commission");
-
-                    b.Property<double>("Cost");
-
-                    b.Property<DateTime>("Delivery");
-
-                    b.Property<DateTime>("Expiration");
-
-                    b.Property<string>("Notes");
-
-                    b.Property<string>("User");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("TourBid");
                 });
 #pragma warning restore 612, 618
         }

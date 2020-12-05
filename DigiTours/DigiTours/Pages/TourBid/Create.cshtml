@@ -1,0 +1,59 @@
+﻿@page
+@model DigiTours.Pages.TourBid.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>TourBid</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TourBid.User" class="control-label"></label>
+                <input asp-for="TourBid.User" class="form-control" />
+                <span asp-validation-for="TourBid.User" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TourBid.Cost" class="control-label"></label>
+                <input asp-for="TourBid.Cost" class="form-control" />
+                <span asp-validation-for="TourBid.Cost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TourBid.Commission" class="control-label"></label>
+                <input asp-for="TourBid.Commission" class="form-control" />
+                <span asp-validation-for="TourBid.Commission" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TourBid.Notes" class="control-label"></label>
+                <input asp-for="TourBid.Notes" class="form-control" />
+                <span asp-validation-for="TourBid.Notes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TourBid.Expiration" class="control-label"></label>
+                <input asp-for="TourBid.Expiration" class="form-control" />
+                <span asp-validation-for="TourBid.Expiration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TourBid.Delivery" class="control-label"></label>
+                <input asp-for="TourBid.Delivery" class="form-control" />
+                <span asp-validation-for="TourBid.Delivery" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

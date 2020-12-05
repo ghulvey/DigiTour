@@ -55,6 +55,9 @@ namespace DigiTours.Pages.Account.Manage
             [Required]
             [Display(Name = "Last name")]
             public string LastName { get; set; }
+
+            [Display (Name = "Would you like to be a DigiTour tour guide?")]
+            public string Guide { get; set; }
         }
 
         public async Task<IActionResult> OnGetAsync()
@@ -72,7 +75,8 @@ namespace DigiTours.Pages.Account.Manage
                 Email = user.Email,
                 PhoneNumber = user.PhoneNumber,
                 FirstName = user.FirstName,
-                LastName = user.LastName
+                LastName = user.LastName,
+                Guide = user.AccountType
             };
 
             IsEmailConfirmed = await _userManager.IsEmailConfirmedAsync(user);
@@ -122,6 +126,11 @@ namespace DigiTours.Pages.Account.Manage
             {
                 user.LastName = Input.LastName;
             }
+            if(Input.Guide != user.AccountType)
+            {
+                user.AccountType = Input.Guide;
+            }
+
             await _userManager.UpdateAsync(user);
 
             StatusMessage = "Your profile has been updated";

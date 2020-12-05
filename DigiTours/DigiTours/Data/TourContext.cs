@@ -9,11 +9,14 @@ namespace DigiTours.Data
 {
     public class TourContext : DbContext
     {
+
         public TourContext (DbContextOptions<TourContext> options)
             : base(options)
         {
         }
 
         public DbSet<DigiTours.Models.Tour> Tour { get; set; }
+        public DbSet<DigiTours.Models.TourBid> TourBid { get; set; }
+
     }
 }

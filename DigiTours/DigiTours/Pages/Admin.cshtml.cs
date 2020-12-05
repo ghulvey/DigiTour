@@ -15,7 +15,7 @@ namespace DigiTours.Pages
         private readonly SignInManager<ApplicationUser> _signInManager;
 
         public string UserID { get; set; }
-        public ApplicationUser.Account Type { get; set; }
+        public string Type { get; set; }
         public string Password { get; set; }
         public void OnGet()
         {

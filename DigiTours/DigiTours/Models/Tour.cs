@@ -20,6 +20,7 @@ namespace DigiTours.Models
         public int ID { get; set; }
         public string User { get; set; }
         public string StreetAddress { get; set; }
+        public string StreetAddress2 { get; set; }
         public string City { get; set; }
         public State? State { get; set; }
         public int ZipCode { get; set; }
