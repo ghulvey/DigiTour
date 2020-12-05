@@ -1,5 +1,5 @@
 ﻿@page
-@model DigiTours.Pages.TourBid.DeleteModel
+@model DigiTours.Pages.TourBids.DeleteModel
 
 @{
     ViewData["Title"] = "Delete";
@@ -37,16 +37,16 @@
             @Html.DisplayFor(model => model.TourBid.Notes)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.TourBid.Expiration)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.TourBid.Expiration)
-        </dd>
-        <dt>
             @Html.DisplayNameFor(model => model.TourBid.Delivery)
         </dt>
         <dd>
             @Html.DisplayFor(model => model.TourBid.Delivery)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Expiration)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Expiration)
         </dd>
     </dl>
     

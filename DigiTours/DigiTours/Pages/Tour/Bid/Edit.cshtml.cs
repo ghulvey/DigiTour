@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using DigiTours.Data;
 using DigiTours.Models;
 
-namespace DigiTours.Pages.TourBid
+namespace DigiTours.Pages.TourBids
 {
     public class EditModel : PageModel
     {
@@ -30,7 +30,7 @@ namespace DigiTours.Pages.TourBid
                 return NotFound();
             }
 
-            TourBid = await _context.TourBid.SingleOrDefaultAsync(m => m.ID == id);
+            TourBid = await _context.TourBids.SingleOrDefaultAsync(m => m.ID == id);
 
             if (TourBid == null)
             {
@@ -69,7 +69,7 @@ namespace DigiTours.Pages.TourBid
 
         private bool TourBidExists(int id)
         {
-            return _context.TourBid.Any(e => e.ID == id);
+            return _context.TourBids.Any(e => e.ID == id);
         }
     }
 }

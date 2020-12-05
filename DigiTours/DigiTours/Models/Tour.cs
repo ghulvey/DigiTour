@@ -27,5 +27,7 @@ namespace DigiTours.Models
         public string Location { get; set; }
         public string Requests { get; set; }
         public Type? Type { get; set; }
+
+        public ICollection<TourBid> TourBids { get; set; }
     }
 }

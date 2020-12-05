@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using DigiTours.Data;
 using DigiTours.Models;
 
-namespace DigiTours.Pages.Dashboard
+namespace DigiTours.Pages.TourBids
 {
     public class IndexModel : PageModel
     {
@@ -19,11 +19,11 @@ namespace DigiTours.Pages.Dashboard
             _context = context;
         }
 
-        public IList<DigiTours.Models.Tour> Tour { get;set; }
+        public IList<TourBid> TourBid { get;set; }
 
         public async Task OnGetAsync()
         {
-            Tour = await _context.Tours.ToListAsync();
+            TourBid = await _context.TourBids.ToListAsync();
         }
     }
 }

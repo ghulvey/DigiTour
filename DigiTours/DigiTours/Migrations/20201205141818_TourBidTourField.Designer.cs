@@ -12,9 +12,10 @@ using System;
 namespace DigiTours.Migrations
 {
     [DbContext(typeof(TourContext))]
-    partial class TourContextModelSnapshot : ModelSnapshot
+    [Migration("20201205141818_TourBidTourField")]
+    partial class TourBidTourField
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,7 +47,7 @@ namespace DigiTours.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Tours");
+                    b.ToTable("Tour");
                 });
 
             modelBuilder.Entity("DigiTours.Models.TourBid", b =>
@@ -78,7 +79,7 @@ namespace DigiTours.Migrations
             modelBuilder.Entity("DigiTours.Models.TourBid", b =>
                 {
                     b.HasOne("DigiTours.Models.Tour", "Tour")
-                        .WithMany("TourBids")
+                        .WithMany()
                         .HasForeignKey("TourID");
                 });
 #pragma warning restore 612, 618

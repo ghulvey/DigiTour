@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using DigiTours.Data;
 using DigiTours.Models;
 
-namespace DigiTours.Pages.TourBid
+namespace DigiTours.Pages.TourBids
 {
     public class DeleteModel : PageModel
     {
@@ -29,7 +29,7 @@ namespace DigiTours.Pages.TourBid
                 return NotFound();
             }
 
-            TourBid = await _context.TourBid.SingleOrDefaultAsync(m => m.ID == id);
+            TourBid = await _context.TourBids.SingleOrDefaultAsync(m => m.ID == id);
 
             if (TourBid == null)
             {
@@ -45,11 +45,11 @@ namespace DigiTours.Pages.TourBid
                 return NotFound();
             }
 
-            TourBid = await _context.TourBid.FindAsync(id);
+            TourBid = await _context.TourBids.FindAsync(id);
 
             if (TourBid != null)
             {
-                _context.TourBid.Remove(TourBid);
+                _context.TourBids.Remove(TourBid);
                 await _context.SaveChangesAsync();
             }
 

@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using DigiTours.Data;
 using DigiTours.Models;
 
-namespace DigiTours.Pages.TourBid
+namespace DigiTours.Pages.TourBids
 {
     public class DetailsModel : PageModel
     {
@@ -28,7 +28,7 @@ namespace DigiTours.Pages.TourBid
                 return NotFound();
             }
 
-            TourBid = await _context.TourBid.SingleOrDefaultAsync(m => m.ID == id);
+            TourBid = await _context.TourBids.SingleOrDefaultAsync(m => m.ID == id);
 
             if (TourBid == null)
             {

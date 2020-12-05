@@ -19,7 +19,7 @@ namespace DigiTours.Pages.Dashboard
             _context = context;
         }
 
-        public Tour Tour { get; set; }
+        public DigiTours.Models.Tour Tour { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -28,7 +28,7 @@ namespace DigiTours.Pages.Dashboard
                 return NotFound();
             }
 
-            Tour = await _context.Tour.SingleOrDefaultAsync(m => m.ID == id);
+            Tour = await _context.Tours.SingleOrDefaultAsync(m => m.ID == id);
 
             if (Tour == null)
             {

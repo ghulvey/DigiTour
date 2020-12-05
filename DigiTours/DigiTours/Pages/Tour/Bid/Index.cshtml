@@ -1,5 +1,5 @@
 ﻿@page
-@model DigiTours.Pages.TourBid.IndexModel
+@model DigiTours.Pages.TourBids.IndexModel
 
 @{
     ViewData["Title"] = "Index";
@@ -26,10 +26,10 @@
                     @Html.DisplayNameFor(model => model.TourBid[0].Notes)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.TourBid[0].Expiration)
+                    @Html.DisplayNameFor(model => model.TourBid[0].Delivery)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.TourBid[0].Delivery)
+                    @Html.DisplayNameFor(model => model.TourBid[0].Expiration)
                 </th>
             <th></th>
         </tr>
@@ -50,10 +50,10 @@
                 @Html.DisplayFor(modelItem => item.Notes)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Expiration)
+                @Html.DisplayFor(modelItem => item.Delivery)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Delivery)
+                @Html.DisplayFor(modelItem => item.Expiration)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |

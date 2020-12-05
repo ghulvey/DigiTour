@@ -25,7 +25,6 @@ H:\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.pdb
 C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\appsettings.Development.json
 C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\appsettings.json
 C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\bundleconfig.json
-C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
 C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.deps.json
 C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.runtimeconfig.json
 C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.runtimeconfig.dev.json
@@ -39,5 +38,3 @@ C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreap
 C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.genruntimeconfig.cache
 C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.csproj.CoreCompileInputs.cache
 C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
-C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\Properties\serviceDependencies.json
-C:\Users\gavin\Documents\GitHub\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\Properties\serviceDependencies.local.json

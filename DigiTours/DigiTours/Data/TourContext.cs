@@ -15,8 +15,8 @@ namespace DigiTours.Data
         {
         }
 
-        public DbSet<DigiTours.Models.Tour> Tour { get; set; }
-        public DbSet<DigiTours.Models.TourBid> TourBid { get; set; }
+        public DbSet<Tour> Tours { get; set; }
+        public DbSet<TourBid> TourBids { get; set; }
 
     }
 }

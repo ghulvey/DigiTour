@@ -8,7 +8,7 @@
 
 
     var user = await UserManager.FindByIdAsync(Model.Tour.User);
-
+    var accessUser = await UserManager.GetUserAsync(User);
 }
 
 <h2>Details</h2>
@@ -18,32 +18,34 @@
     <hr />
 
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Tour.User)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Tour.User)
-        </dd>
-        <dt>
-            Name
-        </dt>
-        <dd>
-            @user.FirstName @user.LastName
-        </dd>
-        <dt>
-            Email
-        </dt>
-        <dd>
-            @user.Email
-        </dd>
-        <hr />
-
+        @if (accessUser.AccountType == "A")
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.Tour.User)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Tour.User)
+            </dd>
+            <dt>
+                Name
+            </dt>
+            <dd>
+                @user.FirstName @user.LastName
+            </dd>
+            <dt>
+                Email
+            </dt>
+            <dd>
+                @user.Email
+            </dd>
+            <hr />
+        }
         <dt>
             Address
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Tour.StreetAddress)
-            @Html.DisplayFor(model => model.Tour.StreetAddress2) 
+            @Html.DisplayFor(model => model.Tour.StreetAddress2)
             @Html.DisplayFor(model => model.Tour.City), @Html.DisplayFor(model => model.Tour.State). @Html.DisplayFor(model => model.Tour.ZipCode)
         </dd>
         <dt>
@@ -67,6 +69,9 @@
     </dl>
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.Tour.ID">Edit</a> |
+    @if (accessUser.Id == user.Id || accessUser.AccountType == "A") 
+    {
+        <a asp-page="./Edit" asp-route-id="@Model.Tour.ID">Edit</a> <p>|</p> 
+    }
     <a asp-page="./Index">Back to List</a>
 </div>

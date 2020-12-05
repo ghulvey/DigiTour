@@ -25,7 +25,7 @@ namespace DigiTours.Pages.Dashboard
         }
 
         [BindProperty]
-        public Tour Tour { get; set; }
+        public DigiTours.Models.Tour Tour { get; set; }
 
 
         public async Task<IActionResult> OnPostAsync()
@@ -35,7 +35,7 @@ namespace DigiTours.Pages.Dashboard
                 return Page();
             }
 
-            _context.Tour.Add(Tour);
+            _context.Tours.Add(Tour);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using DigiTours.Data;
 using DigiTours.Models;
 
-namespace DigiTours.Pages.TourBid
+namespace DigiTours.Pages.TourBids
 {
     public class CreateModel : PageModel
     {
@@ -27,14 +27,17 @@ namespace DigiTours.Pages.TourBid
         [BindProperty]
         public TourBid TourBid { get; set; }
 
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(int? id)
         {
             if (!ModelState.IsValid)
             {
                 return Page();
             }
+            var tour = _context.Tours.FirstOrDefault(u => u.ID == id);
 
-            _context.TourBid.Add(TourBid);
+            TourBid.Tour = tour;
+
+            _context.TourBids.Add(TourBid);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
