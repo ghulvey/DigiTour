@@ -29,5 +29,7 @@ namespace DigiTours.Models
         public Type? Type { get; set; }
 
         public ICollection<TourBid> TourBids { get; set; }
+
+
     }
 }

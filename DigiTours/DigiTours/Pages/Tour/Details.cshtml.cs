@@ -20,6 +20,7 @@ namespace DigiTours.Pages.Dashboard
         }
 
         public DigiTours.Models.Tour Tour { get; set; }
+        public ICollection<TourBid> TourBid { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -28,6 +29,7 @@ namespace DigiTours.Pages.Dashboard
                 return NotFound();
             }
 
+            _context.TourBids.ToList();
             Tour = await _context.Tours.SingleOrDefaultAsync(m => m.ID == id);
 
             if (Tour == null)

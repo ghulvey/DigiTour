@@ -20,6 +20,7 @@ namespace DigiTours.Pages.TourBids
         }
 
         public TourBid TourBid { get; set; }
+        public DigiTours.Models.Tour Tour { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -27,8 +28,9 @@ namespace DigiTours.Pages.TourBids
             {
                 return NotFound();
             }
-
+            _context.Tours.ToList();
             TourBid = await _context.TourBids.SingleOrDefaultAsync(m => m.ID == id);
+            //Tour = await _context.Tours.SingleOrDefaultAsync(m => m.ID == 1003);
 
             if (TourBid == null)
             {

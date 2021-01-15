@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using DigiTours.Data;
 using DigiTours.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DigiTours.Pages.TourBids
 {
@@ -33,8 +34,8 @@ namespace DigiTours.Pages.TourBids
             {
                 return Page();
             }
-            var tour = _context.Tours.FirstOrDefault(u => u.ID == id);
-
+            DigiTours.Models.Tour tour = await _context.Tours.SingleOrDefaultAsync(u => u.ID == id);
+            Console.WriteLine(tour);
             TourBid.Tour = tour;
 
             _context.TourBids.Add(TourBid);

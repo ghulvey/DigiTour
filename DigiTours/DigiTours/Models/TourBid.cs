@@ -15,5 +15,6 @@ namespace DigiTours.Models
         public string Notes { get; set; }
         public DateTime Delivery { get; set; }
         public DateTime Expiration { get; set; }
+        public bool Selected { get; set; }
     }
 }

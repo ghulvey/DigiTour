@@ -11,10 +11,9 @@
     var accessUser = await UserManager.GetUserAsync(User);
 }
 
-<h2>Details</h2>
+<h2>Tour Details</h2>
 
 <div>
-    <h4>Tour</h4>
     <hr />
 
     <dl class="dl-horizontal">
@@ -64,14 +63,40 @@
             @Html.DisplayNameFor(model => model.Tour.Type)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Tour.Type)
+            @Html.DisplayFor(model => model.Tour.TourBids.First().Cost)
         </dd>
     </dl>
 </div>
 <div>
-    @if (accessUser.Id == user.Id || accessUser.AccountType == "A") 
+    @if (accessUser.Id == user.Id || accessUser.AccountType == "A")
     {
-        <a asp-page="./Edit" asp-route-id="@Model.Tour.ID">Edit</a> <p>|</p> 
+        <a asp-page="./Edit" asp-route-id="@Model.Tour.ID">Edit</a> <p>|</p>
     }
     <a asp-page="./Index">Back to List</a>
 </div>
+<div>
+    <h3>Bids</h3>
+    <p>Tour guides make bids to be your tour guide! It is up to you to accept thier bid. Keep in mind the prices and delivery date they have promised in thier bid. Also, bids have an expiration that when meet means they can no longer be accepted.</p>
+    @foreach (var item in Model.Tour.TourBids)
+    {
+        <hr />
+        <dl class="dl-horizontal">
+            @{var tourGuide = await UserManager.FindByIdAsync(item.User);}
+            <dt>Tour Guide</dt>
+            <dd>@tourGuide.FirstName @tourGuide.LastName</dd>
+            <dt>Cost</dt>
+            <dd>@Html.DisplayFor(modelItem => item.Cost)</dd>
+            <dt>Delivery Date</dt>
+            <dd>@Html.DisplayFor(modelItem => item.Delivery)</dd>
+            <dt>Notes</dt>
+            <dd>@Html.DisplayFor(modelItem => item.Notes)</dd>
+            <dt>Expires On</dt>
+            <dd>@Html.DisplayFor(modelItem => item.Expiration)</dd>
+        </dl>
+        <a asp-page="./Accept" asp-route-id="@item.ID">Accept Bid</a>
+    }
+</div>
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
