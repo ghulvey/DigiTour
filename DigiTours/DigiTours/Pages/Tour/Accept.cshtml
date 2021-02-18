@@ -1,0 +1,59 @@
+﻿@page
+@model DigiTours.Pages.Tour.Bid.AcceptModel
+
+@{
+    ViewData["Title"] = "Accept";
+}
+
+<h2>Accept</h2>
+
+<div>
+    <h4>Bid</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bid.User)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Bid.User)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Bid.Cost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Bid.Cost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Bid.Commission)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Bid.Commission)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Bid.Notes)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Bid.Notes)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Bid.Delivery)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Bid.Delivery)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Bid.Expiration)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Bid.Expiration)
+        </dd>
+    </dl>
+</div>
+<div>
+    <form method="post">
+        <input type="submit" value="Accept Bid" class="btn btn-default" />
+    </form>
+</div>
+<div>
+    
+</div>

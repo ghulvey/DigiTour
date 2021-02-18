@@ -1,0 +1,70 @@
+﻿@page
+@model DigiTours.Pages.Tour.GuideModel
+
+@{
+    ViewData["Title"] = "Guide";
+}
+
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
+    var user = await UserManager.GetUserAsync(User);
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    @if (user.AccountType == "G")
+    {
+    <h2>Guide</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tour[0].Location)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tour[0].City)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tour[0].State)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tour[0].Requests)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tour[0].Type)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Tour.Where(n => n.User != user.Id))
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.State)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Requests)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@item.ID">Details</a> | <a asp-page="./Bid/Create" asp-route-id="@item.ID">Bid</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    }
+}

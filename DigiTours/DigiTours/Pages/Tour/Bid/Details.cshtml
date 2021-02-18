@@ -1,0 +1,73 @@
+﻿@page
+@model DigiTours.Pages.TourBids.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TourBid</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.User)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.User)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Tour.Location)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Tour.ID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Tour.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Tour.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Tour.State)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Tour.State)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Cost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Cost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Commission)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Commission)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Notes)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Notes)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Delivery)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Delivery)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Expiration)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Expiration)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.TourBid.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

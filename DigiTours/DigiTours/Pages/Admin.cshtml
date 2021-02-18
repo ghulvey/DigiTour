@@ -1,0 +1,25 @@
+﻿@page
+@model DigiTours.Pages.AdminModel
+@{
+}
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
+    var user = await UserManager.GetUserAsync(User);
+}
+
+<h2>ACCOUNT PERMISION CHANGE</h2>
+<form method="post">
+    <input type="text" placeholder="USER ID" disabled value="@user?.Id" asp-for="User" />
+    <select name="cars" id="cars" asp-for="Type">
+        <option value="S">STANDARD</option>
+        <option value="G">GUIDE</option>
+        <option value="A">ADMIN</option>
+    </select>
+    <input type="password" placeholder="MASTER PASSWORD" asp-for="Password" />
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-default" />
+    </div>
+</form>

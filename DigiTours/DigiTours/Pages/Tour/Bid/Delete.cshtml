@@ -1,0 +1,58 @@
+﻿@page
+@model DigiTours.Pages.TourBids.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TourBid</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.User)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.User)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Cost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Cost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Commission)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Commission)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Notes)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Notes)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Delivery)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Delivery)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TourBid.Expiration)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TourBid.Expiration)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="TourBid.ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
