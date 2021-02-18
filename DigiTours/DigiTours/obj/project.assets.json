@@ -13259,23 +13259,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mc_ghulvey21\\.nuget\\packages\\": {},
+    "C:\\Users\\mc_akhamvongsouk21\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\GitHub\\DigiTour\\DigiTours\\DigiTours\\DigiTours.csproj",
+      "projectUniqueName": "H:\\ecksDee\\DigiTour\\OUCH\\DigiTour\\DigiTours\\DigiTours\\DigiTours.csproj",
       "projectName": "DigiTours",
-      "projectPath": "H:\\GitHub\\DigiTour\\DigiTours\\DigiTours\\DigiTours.csproj",
-      "packagesPath": "C:\\Users\\mc_ghulvey21\\.nuget\\packages\\",
-      "outputPath": "H:\\GitHub\\DigiTour\\DigiTours\\DigiTours\\obj\\",
+      "projectPath": "H:\\ecksDee\\DigiTour\\OUCH\\DigiTour\\DigiTours\\DigiTours\\DigiTours.csproj",
+      "packagesPath": "C:\\Users\\mc_akhamvongsouk21\\.nuget\\packages\\",
+      "outputPath": "H:\\ecksDee\\DigiTour\\OUCH\\DigiTour\\DigiTours\\DigiTours\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mc_ghulvey21\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mc_akhamvongsouk21\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

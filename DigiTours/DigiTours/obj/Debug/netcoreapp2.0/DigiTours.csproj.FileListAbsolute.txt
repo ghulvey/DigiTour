@@ -22,3 +22,15 @@ H:\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.Assembl
 H:\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.AssemblyInfo.cs
 H:\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.dll
 H:\GitHub\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.pdb
+H:\ecksDee\DigiTour\OUCH\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.deps.json
+H:\ecksDee\DigiTour\OUCH\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.runtimeconfig.json
+H:\ecksDee\DigiTour\OUCH\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.runtimeconfig.dev.json
+H:\ecksDee\DigiTour\OUCH\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.dll
+H:\ecksDee\DigiTour\OUCH\DigiTour\DigiTours\DigiTours\bin\Debug\netcoreapp2.0\DigiTours.pdb
+H:\ecksDee\DigiTour\OUCH\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.csprojAssemblyReference.cache
+H:\ecksDee\DigiTour\OUCH\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.csproj.CoreCompileInputs.cache
+H:\ecksDee\DigiTour\OUCH\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+H:\ecksDee\DigiTour\OUCH\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.AssemblyInfoInputs.cache
+H:\ecksDee\DigiTour\OUCH\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.AssemblyInfo.cs
+H:\ecksDee\DigiTour\OUCH\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.dll
+H:\ecksDee\DigiTour\OUCH\DigiTour\DigiTours\DigiTours\obj\Debug\netcoreapp2.0\DigiTours.pdb
